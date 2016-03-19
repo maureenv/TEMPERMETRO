@@ -1,0 +1,30 @@
+
+<h1> Share Your Fury! </h1>
+<div class="container">
+<!-- :post is a symbol -->
+<%= form_for :post, url: posts_path do |f| %>
+  <p>
+    <%= f.label :color %><br>
+    <%= f.text_field :color %>
+  </p>
+
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+
+  <p>
+    <%= f.label :text %><br>
+    <%= f.text_area :text %>
+  </p>
+
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
+
+<p> <%= link_to 'Back', posts_path %> </p>
+
+<!-- When a form is submitted, the fields of the form are sent to Rails as parameters. These parameters can then be referenced inside the controller actions, typically to perform a particular task.  -->
+
+</div>

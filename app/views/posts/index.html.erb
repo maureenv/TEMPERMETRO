@@ -1,0 +1,18 @@
+<h1> EVERY COMPLAINT EVER! </h1>
+<h2 class="postcolorguide"> *The post's border color refers to the metro line color </h2>
+
+<div class="container">
+  <div class = "postbutton"><%= link_to "Post a Complaint", new_post_path %>
+  </div>
+
+
+  <% @posts.each do |post| %>
+  <div class = "postcontainer">
+        <p class="posttitle"><%= post.title %></p>
+        <p class="date">Posted by Cat at <%=post.updated_at %></p>
+        <p><%= post.text %></p>
+        </div>
+  <% end %>
+
+
+</div>

@@ -8,9 +8,13 @@
 
   <% @posts.each do |post| %>
   <div class = "postcontainer">
-        <p class="posttitle"><%= post.title %></p>
-        <p class="date">Posted by Cat at <%=post.updated_at %></p>
-        <p><%= post.text %></p>
+    <p class="posttitle"><%= post.title %></p>
+    <p class="date">Posted by Cat at <%=post.updated_at %></p>
+    <p><%= post.text %></p>
+      <ul class="postnav">
+        <li> <%= link_to 'Edit', edit_post_path(post)%></li>
+        <li> <%= link_to 'Delete', "#"%></li>
+      </ul>
         </div>
   <% end %>
 

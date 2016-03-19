@@ -1,8 +1,8 @@
 <h1> Revise Your Fury! </h1>
 <div class="container">
 <!-- :post is a symbol -->
-<%= form_for :post, url: posts_path(@post), method: :patch do |f| %>
-patch method is used for updating things
+<%= form_for :post, url: post_path(@post), method: :patch do |f| %>
+<!-- patch method is used for updating things, make sure post_path is singular -->
   <p>
     <%= f.label :color %><br>
     <%= f.text_field :color %>

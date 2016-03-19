@@ -11,11 +11,13 @@
     <p class="posttitle"><%= post.title %></p>
     <p class="date">Posted by Cat at <%=post.updated_at %></p>
     <p><%= post.text %></p>
-      <ul class="postnav">
+      <ul>
+        <li> <%= link_to 'Comment', "#"%></li>
         <li> <%= link_to 'Edit', edit_post_path(post)%></li>
-        <li> <%= link_to 'Delete', "#"%></li>
+        <li> <%= link_to 'Delete', post_path(post),
+                  method: :delete, data: {confirm: 'Are you sure?'} %></li>
       </ul>
-        </div>
+  </div>
   <% end %>
 
 

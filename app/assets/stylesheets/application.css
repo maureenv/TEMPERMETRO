@@ -144,6 +144,7 @@ h1 {
   border: solid gray 1px;
   margin-top: 20px;
   padding: 15px;
+  padding-bottom: 45px;
 }
 
 p {
@@ -160,4 +161,24 @@ p {
 .date {
   color: gray;
   padding-bottom: 10px;
+}
+
+ul{
+  float: left;
+  margin-left: -70px;
+}
+li {
+  float: right;
+  list-style: none;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+li a{
+  color: gray;
+  font-family: arial;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: black;
 }

@@ -1,21 +1,24 @@
 <h1><%= @post.title %></h1>
 <div class="container">
-
-  <div class = "postcontainer">
-    <p class="posttitle"><%= @post.title %></p>
-    <p class="date">Posted by Cat at <%=@post.updated_at %></p>
-    <p><%= @post.text %></p>
-      <ul>
-        <li> <%= link_to 'Edit', edit_post_path(@post)%></li>
-        <li> <%= link_to 'Delete', post_path(@post),
-                  method: :delete, data: {confirm: 'Are you sure?'} %></li>
-      </ul>
+  <div class = "postgradient_red">
+    <div class = "postcontainer">
+      <p class="posttitle"><%= @post.title %></p>
+      <p class="date">Posted by Cat at <%=@post.updated_at %></p>
+      <p><%= @post.text %></p>
+        <ul>
+          <li> <%= link_to 'Edit', edit_post_path(@post)%></li>
+          <li> <%= link_to 'Delete', post_path(@post),
+                    method: :delete, data: {confirm: 'Are you sure?'} %></li>
+        </ul>
+    </div>
   </div>
 
   <% @post.comments.each do |comment| %>
     <div class = "commentcontainer">
     <p class="commenter"> Comment made by cat at <%=comment.updated_at %></p>
     <p> <%=comment.text %></p>
+    <p class="delete_comment"> <%= link_to 'Delete', [comment.post, comment],
+              method: :delete, data: {confirm: 'Are you sure?'} %></p>
       </div>
   <% end %>
 

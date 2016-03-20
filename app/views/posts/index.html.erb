@@ -7,6 +7,7 @@
 
 
   <% @posts.each do |post| %>
+  <div class = "postgradient_red">
   <div class = "postcontainer">
     <p class="posttitle"><%= post.title %></p>
     <p class="date">Posted by Cat at <%=post.updated_at %></p>
@@ -18,6 +19,7 @@
                   method: :delete, data: {confirm: 'Are you sure?'} %></li>
       </ul>
   </div>
+</div>
     <% end %>
 
 

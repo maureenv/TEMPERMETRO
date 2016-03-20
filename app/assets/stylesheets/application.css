@@ -1,3 +1,8 @@
+/* MAKE CSS GRADIENTS
+http://www.cssmatic.com/gradient-generator#%27\-moz\-linear\-gradient\%28top\%2C\%20rgba\%28191\%2C17\%2C55\%2C1\%29\%200\%25\%2C\%20rgba\%28205\%2C205\%2C205\%2C1\%29\%20100\%25\%29\%3B%27
+*/
+
+
 * {
     margin: 0;
     padding: 0 auto;
@@ -140,10 +145,87 @@ h1 {
 .postbutton:hover {
   background-color: #a60000;
 }
+.postgradient_red {
+  background: rgba(191,17,55,1);
+  background: -moz-linear-gradient(top, rgba(191,17,55,1) 0%, rgba(205,205,205,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(191,17,55,1)), color-stop(100%, rgba(205,205,205,1)));
+  background: -webkit-linear-gradient(top, rgba(191,17,55,1) 0%, rgba(205,205,205,1) 100%);
+  background: -o-linear-gradient(top, rgba(191,17,55,1) 0%, rgba(205,205,205,1) 100%);
+  background: -ms-linear-gradient(top, rgba(191,17,55,1) 0%, rgba(205,205,205,1) 100%);
+  background: linear-gradient(to bottom, rgba(191,17,55,1) 0%, rgba(205,205,205,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf1137', endColorstr='#cdcdcd', GradientType=0 );
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.postgradient_orange {
+  background: rgba(221,134,3,1);
+  background: -moz-linear-gradient(top, rgba(221,134,3,1) 0%, rgba(205,205,205,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(221,134,3,1)), color-stop(100%, rgba(205,205,205,1)));
+  background: -webkit-linear-gradient(top, rgba(221,134,3,1) 0%, rgba(205,205,205,1) 100%);
+  background: -o-linear-gradient(top, rgba(221,134,3,1) 0%, rgba(205,205,205,1) 100%);
+  background: -ms-linear-gradient(top, rgba(221,134,3,1) 0%, rgba(205,205,205,1) 100%);
+  background: linear-gradient(to bottom, rgba(221,134,3,1) 0%, rgba(205,205,205,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd8603', endColorstr='#cdcdcd', GradientType=0 );
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.postgradient_silver {
+  background: rgba(138,138,138,1);
+  background: -moz-linear-gradient(top, rgba(138,138,138,1) 0%, rgba(205,205,205,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(138,138,138,1)), color-stop(100%, rgba(205,205,205,1)));
+  background: -webkit-linear-gradient(top, rgba(138,138,138,1) 0%, rgba(205,205,205,1) 100%);
+  background: -o-linear-gradient(top, rgba(138,138,138,1) 0%, rgba(205,205,205,1) 100%);
+  background: -ms-linear-gradient(top, rgba(138,138,138,1) 0%, rgba(205,205,205,1) 100%);
+  background: linear-gradient(to bottom, rgba(138,138,138,1) 0%, rgba(205,205,205,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a8a8a', endColorstr='#cdcdcd', GradientType=0 );
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.postgradient_blue {
+  background: rgba(10,146,214,1);
+  background: -moz-linear-gradient(top, rgba(10,146,214,1) 0%, rgba(205,205,205,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(10,146,214,1)), color-stop(100%, rgba(205,205,205,1)));
+  background: -webkit-linear-gradient(top, rgba(10,146,214,1) 0%, rgba(205,205,205,1) 100%);
+  background: -o-linear-gradient(top, rgba(10,146,214,1) 0%, rgba(205,205,205,1) 100%);
+  background: -ms-linear-gradient(top, rgba(10,146,214,1) 0%, rgba(205,205,205,1) 100%);
+  background: linear-gradient(to bottom, rgba(10,146,214,1) 0%, rgba(205,205,205,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a92d6', endColorstr='#cdcdcd', GradientType=0 );
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.postgradient_yellow {
+  background: rgba(246,212,22,1);
+  background: -moz-linear-gradient(top, rgba(246,212,22,1) 0%, rgba(205,205,205,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(246,212,22,1)), color-stop(100%, rgba(205,205,205,1)));
+  background: -webkit-linear-gradient(top, rgba(246,212,22,1) 0%, rgba(205,205,205,1) 100%);
+  background: -o-linear-gradient(top, rgba(246,212,22,1) 0%, rgba(205,205,205,1) 100%);
+  background: -ms-linear-gradient(top, rgba(246,212,22,1) 0%, rgba(205,205,205,1) 100%);
+  background: linear-gradient(to bottom, rgba(246,212,22,1) 0%, rgba(205,205,205,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6d416', endColorstr='#cdcdcd', GradientType=0 );
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.postgradient_green {
+  background: rgba(0,175,82,1);
+  background: -moz-linear-gradient(top, rgba(0,175,82,1) 0%, rgba(205,205,205,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,175,82,1)), color-stop(100%, rgba(205,205,205,1)));
+  background: -webkit-linear-gradient(top, rgba(0,175,82,1) 0%, rgba(205,205,205,1) 100%);
+  background: -o-linear-gradient(top, rgba(0,175,82,1) 0%, rgba(205,205,205,1) 100%);
+  background: -ms-linear-gradient(top, rgba(0,175,82,1) 0%, rgba(205,205,205,1) 100%);
+  background: linear-gradient(to bottom, rgba(0,175,82,1) 0%, rgba(205,205,205,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00af52', endColorstr='#cdcdcd', GradientType=0 );
+  padding: 10px;
+  margin-top: 30px;
+}
 
 .postcontainer {
-  border: solid blue 5px;
-  margin-top: 20px;
+  background-color: white;
+  /*border: solid blue 5px;*/
   padding: 15px;
   padding-bottom: 45px;
 }
@@ -245,7 +327,7 @@ label {
 
 .commentcontainer {
   background-color: #cdcdcd;
-  padding: 15px;
+  padding: 15px 25px 15px 25px;
   border-bottom: black solid 1px;
 }
 
@@ -258,6 +340,18 @@ label {
   height: 40px;
   font-size: 15px;
   border: 1px solid;
+}
+.delete_comment {
+  padding-top: 5px;
+}
+
+.delete_comment a {
+  color: gray;
+  text-decoration: none;
+}
+
+.delete_comment a:hover {
+  color: black;
 }
 
 textarea.comment_field {

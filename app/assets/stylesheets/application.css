@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0 auto;
+     box-sizing: border-box;
 }
 a {
   outline: 0;
@@ -126,7 +127,7 @@ h1 {
   text-align: center;
   line-height: 50px;
   font-family: arial;
-  background-color: #e60000;
+  background-color: gray;
   margin: 0 auto;
   margin-top: 20px;
 }
@@ -141,7 +142,7 @@ h1 {
 }
 
 .postcontainer {
-  border: solid gray 1px;
+  border: solid blue 5px;
   margin-top: 20px;
   padding: 15px;
   padding-bottom: 45px;
@@ -181,4 +182,92 @@ li a{
 
 li a:hover {
   color: black;
+}
+/**************************** POST FORM */
+
+
+input[type="text"],
+textarea{
+  width:100%;
+  font-family: arial;
+  font-size: 25px;
+  display:block;
+  margin-bottom: 30px;
+  border-color: black;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+
+input.post_field {
+  border: 1px solid black;
+}
+
+label {
+  font-size: 25px;
+  font-family: arial;
+  font-weight: 700;
+}
+
+.submit_button {
+  margin-top: -5px;
+  background-color: black;
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+  border: none;
+}
+
+.submit_button:hover {
+  background-color: red;
+}
+
+.back {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.back a{
+  color: black;
+  text-decoration: none;
+  font-family: arial;
+  font-size: 20px;
+}
+
+.back a:hover {
+  color: red;
+}
+
+.post_field {
+  height: 100px;
+}
+
+/**************************** COMMENTS ***********/
+
+.commentcontainer {
+  background-color: #cdcdcd;
+  padding: 15px;
+  border-bottom: black solid 1px;
+}
+
+.commenter {
+  color: gray;
+  padding-bottom: 5px;
+}
+
+.comment_field {
+  height: 40px;
+  font-size: 15px;
+  border: 1px solid;
+}
+
+textarea.comment_field {
+  margin-top: 0px;
+}
+
+input.comment_field{
+  width:100%;
+  font-family: arial;
+  font-size: 16px;
+  display:block;
+  padding: 10px;
 }

@@ -1,14 +1,31 @@
-<p>
-  <strong>Color:</strong>
-  <%= @post.title %>
-</p>
+<h1><%= @post.title %></h1>
+<div class="container">
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+  <div class = "postcontainer">
+    <p class="posttitle"><%= @post.title %></p>
+    <p class="date">Posted by Cat at <%=@post.updated_at %></p>
+    <p><%= @post.text %></p>
+      <ul>
+        <li> <%= link_to 'Edit', edit_post_path(@post)%></li>
+        <li> <%= link_to 'Delete', post_path(@post),
+                  method: :delete, data: {confirm: 'Are you sure?'} %></li>
+      </ul>
+  </div>
 
-<p>
-  <strong>Text:</strong>
-  <%= @post.text %>
-</p>
+  <% @post.comments.each do |comment| %>
+    <div class = "commentcontainer">
+    <p class="commenter"> Comment made by cat at <%=comment.updated_at %></p>
+    <p> <%=comment.text %></p>
+      </div>
+  <% end %>
+
+
+<%= form_for([@post, @post.comments.build]) do |f| %>
+  <p>
+      <%= f.text_field :text, :placeholder => "Type a comment and press enter to submit.", :class => 'comment_field'%>
+  </p>
+
+<% end %>
+
+<p class="back"> <%= link_to 'Back', posts_path %> </p>
+</div>

@@ -15,15 +15,14 @@
 
   <p>
     <%= f.label :text %><br>
-    <%= f.text_area :text %>
+    <%= f.text_area :text, :class => 'comment_field' %>
   </p>
 
-  <p>
-    <%= f.submit %>
+  <%= f.submit 'Edit!', :class => 'submit_button'%>
   </p>
-<% end %>
+  <% end %>
 
-<p> <%= link_to 'Back', posts_path %> </p>
+  <p class="back"> <%= link_to 'Back', posts_path %> </p>
 
 
 </div>

@@ -1,4 +1,4 @@
-<h1> EVERY COMPLAINT EVER! </h1>
+<h1> EVERY COMPLAINT MATTERS! </h1>
 <h2 class="postcolorguide"> *The post's border color refers to the metro line color </h2>
 
 <div class="container">
@@ -12,13 +12,14 @@
     <p class="date">Posted by Cat at <%=post.updated_at %></p>
     <p><%= post.text %></p>
       <ul>
-        <li> <%= link_to 'Comment', "#"%></li>
+        <li> <%= link_to 'Comment', post_path(post)%></li>
         <li> <%= link_to 'Edit', edit_post_path(post)%></li>
         <li> <%= link_to 'Delete', post_path(post),
                   method: :delete, data: {confirm: 'Are you sure?'} %></li>
       </ul>
   </div>
-  <% end %>
+    <% end %>
+
 
 
 </div>

@@ -9,4 +9,4 @@ post1 = Post.create(color: "red", title: "The red line is terrible!", text: "Sed
 
 post2 = Post.create(color: "red", title: "The metro took my money!", text: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.")
 
-# post1.comments.create(name: "Dog", email: "dog@dog.com", comment: "Woof! Woof!")
+post1.comments.create(text: "This is my first comment")

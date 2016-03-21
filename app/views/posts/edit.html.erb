@@ -1,12 +1,27 @@
 <h1> Revise Your Fury! </h1>
 <div class="container">
 <!-- :post is a symbol -->
+<div class="new_post_container">
 <%= form_for :post, url: post_path(@post), method: :patch do |f| %>
 <!-- patch method is used for updating things, make sure post_path is singular -->
-  <p>
-    <%= f.label :color %><br>
-    <%= f.text_field :color %>
-  </p>
+<%= f.label "On which metro-line did this occur?"%><br>
+  <ul class="form_color_ul">
+    <li class="circle_list"><div class="silver circle">SV</div></li>
+    <li class="circle_list"><div class="blue circle">BL</div></li>
+    <li class="circle_list"><div class="green circle">GR</div></li>
+    <li class="circle_list"><div class="yellow circle">YL</div></li>
+    <li class="circle_list"><div class="orange circle">OR</div></li>
+    <li class="circle_list"><div class="red circle">RD</div></li>
+  </ul>
+</br>
+<div class="form_color_container">
+    <%= f.radio_button :color, "red", :class => 'red_radio'%>
+    <%= f.radio_button :color, "orange", :class => 'orange_radio' %>
+    <%= f.radio_button :color, "yellow", :class => 'yellow_radio' %>
+    <%= f.radio_button :color, "green", :class => 'green_radio' %>
+    <%= f.radio_button :color, "blue", :class => 'blue_radio' %>
+    <%= f.radio_button :color, "silver", :class => 'silver_radio' %>
+</div>
 
   <p>
     <%= f.label :title %><br>
@@ -24,5 +39,5 @@
 
   <p class="back"> <%= link_to 'Back', posts_path %> </p>
 
-
+</div>
 </div>

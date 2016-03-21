@@ -27,7 +27,13 @@
       <p class="delete_comment"> <%= link_to 'Delete', [comment.post, comment],
                 method: :delete, data: {confirm: 'Are you sure?'} %></p>
     </div>
-  
+
+    <% end %>
+    <%= form_for([post, post.comments.build]) do |f| %>
+      <p>
+          <%= f.text_field :text, :placeholder => "Type a comment and press enter to submit.", :class => 'comment_field'%>
+      </p>
+
     <% end %>
 
   <% end %>

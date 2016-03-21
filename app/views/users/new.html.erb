@@ -1,0 +1,14 @@
+<h1>Sign Up</h1>
+<div class="container">
+  <div class="new_post_container">
+  <%= form_for @user do |f| %>
+    <%= f.label :username %>
+    <%= f.text_field :username %>
+
+    <%= f.label :password %><br>
+    <%= f.password_field :password%>
+    <br>
+    <%= f.submit "Submit", :class => 'submit_button'%>
+  <% end %>
+  </div>
+</div>

@@ -271,6 +271,7 @@ li a:hover {
 }
 
 input[type="text"],
+input[type="password"],
 textarea{
   width:100%;
   font-family: arial;

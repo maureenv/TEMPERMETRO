@@ -19,8 +19,18 @@
                   method: :delete, data: {confirm: 'Are you sure?'} %></li>
       </ul>
   </div>
-</div>
+  </div>
+    <% post.comments.reverse.each do |comment| %>
+    <div class = "commentcontainer">
+      <p class="commenter"> Comment made by cat at <%=comment.updated_at %></p>
+      <p> <%=comment.text %></p>
+      <p class="delete_comment"> <%= link_to 'Delete', [comment.post, comment],
+                method: :delete, data: {confirm: 'Are you sure?'} %></p>
+    </div>
+  
     <% end %>
+
+  <% end %>
 
 
 

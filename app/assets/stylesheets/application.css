@@ -407,7 +407,7 @@ label {
 
 .commenter {
   color: gray;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .comment_field {
@@ -416,7 +416,7 @@ label {
   border: 1px solid;
 }
 .delete_comment {
-  padding-top: 5px;
+  padding-top: 10px;
 }
 
 .delete_comment a {

@@ -1,6 +1,6 @@
 <h1><%= @post.title %></h1>
 <div class="container">
-  <div class = "postgradient_red">
+  <%= raw post_color(@post) %>
     <div class = "postcontainer">
       <p class="posttitle"><%= @post.title %></p>
       <p class="date">Posted by Cat at <%=@post.updated_at %></p>

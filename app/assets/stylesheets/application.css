@@ -266,7 +266,9 @@ li a:hover {
   color: black;
 }
 /**************************** POST FORM */
-
+.new_post_container {
+  margin-top: 30px;
+}
 
 input[type="text"],
 textarea{
@@ -322,7 +324,79 @@ label {
 .post_field {
   height: 100px;
 }
+/*************************** RADIO BUTTON *********/
 
+/* hides radio button */
+.red_radio {
+  margin-left: 37px;
+}
+
+.orange_radio {
+  margin-left: 105px;
+}
+
+.yellow_radio {
+  margin-left: 105px;
+}
+
+.green_radio {
+  margin-left: 105px;
+}
+
+.blue_radio {
+  margin-left: 105px;
+}
+.silver_radio {
+  margin-left: 105px;
+}
+
+.form_color_ul {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.form_color_container {
+  margin-top:60px;
+  margin-bottom: 20px;
+}
+.circle_list {
+  margin-right: 1.5px;
+}
+.circle {
+  width:90px;
+  height:90px;
+  border-radius:50px;
+  font-size:20px;
+  font-family: arial;
+  color:#fff;
+  line-height:90px;
+  text-align:center;
+  background:#000
+}
+
+.red {
+  background-color: rgba(191,17,55,1);
+}
+
+.orange {
+  background-color: rgba(221,134,3,1);
+}
+
+.yellow {
+  background-color: rgba(246,212,22,1);
+}
+
+.green {
+  background-color: rgba(0,175,82,1);
+}
+
+.blue {
+  background-color: rgba(10,146,214,1);
+}
+
+.silver {
+  background-color: rgba(138,138,138,1);
+}
 /**************************** COMMENTS ***********/
 
 .commentcontainer {

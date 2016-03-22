@@ -34,6 +34,15 @@ a {
   float: right;
   font-family: arial;
   padding-right: 30px;
+  padding-left: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.signin {
+  float: right;
+  font-family: arial;
+  padding-right: 30px;
   padding-top: 26.5px;
   color: white;
   text-decoration: none;

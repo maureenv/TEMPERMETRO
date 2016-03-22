@@ -18,9 +18,10 @@ class PostsController < ApplicationController
   def create #need this to create new posts
     #@post = Post.new(params[:post]) #params gets attributes and maps them to the database, but this will give error because we need "strong parameters", so use the line inside private. Then use line below
     @post = Post.new(post_params)
+    @post.user = @current_user #NEED THIS TO SAVE CURRENT_USER to print out current user on posts and comments
 
     if @post.save #saves model to database, returns boolean to show if post is saved or not.
-    redirect_to posts_path
+      redirect_to posts_path
     else
       render 'new'#if all sections are filled out, redirect to all posts page, else, show a new form
     end

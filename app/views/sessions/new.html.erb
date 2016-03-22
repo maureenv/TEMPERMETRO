@@ -1,7 +1,7 @@
-<h1>Sign Up/In</h1>
+<h1>Sign In</h1>
 <div class="container">
   <div class="new_post_container">
-  <%= form_for @user do |f| %>
+  <%= form_for @user, url: session_path, method: :post do |f| %>
     <%= f.label :username %>
     <%= f.text_field :username %>
 
@@ -11,4 +11,12 @@
     <%= f.submit "Submit", :class => 'submit_button'%>
   <% end %>
   </div>
+
+
+<h1> Not a member? Then Sign Up! </h1>
+
+
+
+
+
 </div>

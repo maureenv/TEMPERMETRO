@@ -1,32 +1,38 @@
 <h1><%= @post.title %></h1>
 <div class="container">
   <%= raw post_color(@post) %>
-    <div class = "postcontainer">
-      <p class="posttitle"><%= @post.title %></p>
-      <p class="date">Posted by Cat at <%=@post.updated_at %></p>
-      <p><%= @post.text %></p>
-        <ul>
-          <li> <%= link_to 'Edit', edit_post_path(@post)%></li>
-          <li> <%= link_to 'Delete', post_path(@post),
-                    method: :delete, data: {confirm: 'Are you sure?'} %></li>
-        </ul>
-    </div>
+  <div class = "postcontainer">
+    <p class="posttitle"><%= @post.title %></p>
+    <p class="date">Posted by Cat at <%=@post.updated_at %></p>
+    <p><%= @post.text %></p>
+    <ul>
+      <% if @current_user.password == post.user.password%>
+      <li> <%= link_to 'Edit', edit_post_path(@post)%></li>
+      <li> <%= link_to 'Delete', post_path(@post),
+      method: :delete, data: {confirm: 'Are you sure?'} %></li>
+      <% end %>
+      <% if @current_user%>
+      <li> <%= link_to 'Comment', post_path(@post)%></li>
+    </ul>
+    <% end %>
   </div>
+</div>
 
-  <% @post.comments.each do |comment| %>
-    <div class = "commentcontainer">
-    <p class="commenter"> Comment made by cat at <%=comment.updated_at %></p>
-    <p> <%=comment.text %></p>
-    <p class="delete_comment"> <%= link_to 'Delete', [comment.post, comment],
-              method: :delete, data: {confirm: 'Are you sure?'} %></p>
-      </div>
-  <% end %>
+
+<% @post.comments.each do |comment| %>
+<div class = "commentcontainer">
+  <p class="commenter"> Comment made by  <%=comment.user.username %> at <%=comment.updated_at %></p>
+  <p> <%=comment.text %></p>
+  <p class="delete_comment"> <%= link_to 'Delete', [comment.post, comment],
+  method: :delete, data: {confirm: 'Are you sure?'} %></p>
+</div>
+<% end %>
 
 
 <%= form_for([@post, @post.comments.build]) do |f| %>
-  <p>
-      <%= f.text_field :text, :placeholder => "Type a comment and press enter to submit.", :class => 'comment_field'%>
-  </p>
+<p>
+  <%= f.text_field :text, :placeholder => "Type a comment and press enter to submit.", :class => 'comment_field'%>
+</p>
 
 <% end %>
 

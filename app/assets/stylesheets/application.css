@@ -7,6 +7,7 @@ http://www.cssmatic.com/gradient-generator#%27\-moz\-linear\-gradient\%28top\%2C
     margin: 0;
     padding: 0 auto;
      box-sizing: border-box;
+     /*outline: 1px solid red;*/
 }
 a {
   outline: 0;
@@ -336,7 +337,6 @@ label {
 }
 /*************************** RADIO BUTTON *********/
 
-/* hides radio button */
 .red_radio {
   margin-left: 37px;
 }
@@ -381,7 +381,6 @@ label {
   color:#fff;
   line-height:90px;
   text-align:center;
-  background:#000
 }
 
 .red {
@@ -449,3 +448,138 @@ input.comment_field{
   display:block;
   padding: 10px;
 }
+
+/*************** MEDIA QUERIES ***************/
+@media (max-width: 450px) {
+
+  /******** Home page ************/
+.homecontainer {
+  width: 300px;
+}
+
+h1.mainheader {
+  padding-top: 40px;
+  font-size: 35px;
+}
+
+h2 {
+  padding-top: 10px;
+  font-size: 23px;
+}
+
+.homebutton {
+  width: 250px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 25px;
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 23px;
+}
+
+  /*<body class="backgroundimage">
+  <div class = "homecontainer">
+    <h1 class="mainheader">TEMPERMETRO</h1>
+    <h2>The app to vent your metro frustrations is finally here!</h2>
+
+    <div class = "homebutton"><%= link_to "View Complaints!", posts_path %>
+    </div>
+
+    <h3> or sign in to start venting </h3>*/
+  /********** All posts page *******/
+  h1 {
+    font-size: 30px;
+  }
+
+  .no_welcome {
+    display: none;
+  }
+  .container {
+    width: 300px;
+  }
+
+  .postcolorguide {
+    font-size: 18px;
+    padding-top: 10px;
+    width: 250px;
+    margin: 0 auto;
+  }
+
+  .logo a{
+    font-family: arial black;
+    font-size: 25px;
+    padding-left: 10px;
+    float: left;
+    padding-top: 17px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .signin a{
+    float: right;
+    font-family: arial;
+    padding-right: 1px;
+    padding-left: 1px;
+    margin-right: -15px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .signin {
+    float: right;
+    font-family: arial;
+    padding-top: 26.5px;
+    color: white;
+    text-decoration: none;
+  }
+
+
+  .red_radio {
+    margin-left: 37px;
+  }
+
+  .orange_radio {
+    margin-left: 105px;
+  }
+
+  .yellow_radio {
+    margin-left: 105px;
+  }
+
+  .green_radio {
+    margin-left: 105px;
+  }
+
+  .blue_radio {
+    margin-left: 105px;
+  }
+  .silver_radio {
+    margin-left: 105px;
+  }
+
+  .form_color_ul {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-right: 80px;
+  }
+
+  .form_color_container {
+    margin-top:60px;
+    margin-bottom: 20px;
+  }
+
+  .circle {
+    width:90px;
+    height:90px;
+    border-radius:50px;
+    font-size:20px;
+    font-family: arial;
+    color:#fff;
+    line-height:90px;
+    text-align:center;
+  }
+
+
+} /* close media queri */

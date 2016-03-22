@@ -2,7 +2,7 @@
   <p class="logo"><%= link_to "TEMPERMETRO", root_path %></p>
   <% if @current_user %>
   <p class="signin"> <%= link_to "Sign Out", session_path, method: :delete%>
-  Welcome <%=@current_user.username%>  </p>
+  <span class = "no_welcome">Welcome <%=@current_user.username%> </span> </p>
   <% else %>
   <p class="signin"><%= link_to "Sign In", new_user_path %></p>
   <% end %>

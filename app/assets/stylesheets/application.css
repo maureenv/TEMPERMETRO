@@ -72,23 +72,21 @@ video {
 
 /******************** HOME PAGE STYLING *********/
 
-h1.mainheader {
-  font-family: arial black;
-  font-size: 80px;
-  margin-top: 20px;
-  text-align: center;
-}
+
 
 h2 {
   font-family: arial;
-  font-size: 70px;
-  font-weight: 300;
+  font-size: 80px;
+  font-weight: 700;
   text-align: center;
 }
 
 .homecontainer {
-  width: 700px;
+  width: 750px;
+  height: 400px;
   margin: 0 auto;
+  margin-top: 100px;
+
 }
 
 .homebutton{
@@ -116,11 +114,11 @@ h2 {
 
 h3 {
   color: black;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 300;
   font-family: arial;
   text-align: center;
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 .backgroundimage {
@@ -147,7 +145,7 @@ h1 {
 
 .postcolorguide {
   font-size: 25px;
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .postbutton {
@@ -479,14 +477,10 @@ input.comment_field{
   width: 300px;
 }
 
-h1.mainheader {
-  padding-top: 40px;
-  font-size: 35px;
-}
 
 h2 {
   padding-top: 10px;
-  font-size: 23px;
+  font-size: 33px;
 }
 
 .homebutton {
@@ -560,59 +554,54 @@ h3 {
 
 
   .red_radio {
-    float: right;
-    display: none;
+    margin-right: 0;
   }
 
   .orange_radio {
-    float: right;
-    display: none;
+    margin-left: 85px;
   }
 
   .yellow_radio {
-  float: right;
-  display: none;
+  margin-left: 82px;
   }
 
   .green_radio {
-    margin-left: 105px;
+    margin-left: 40px;
   }
 
   .blue_radio {
-    margin-left: 105px;
+    margin-left: 80px;
   }
   .silver_radio {
-    margin-left: 105px;
-  }
-
-  ul.form_color_ul {
-    margin-bottom: 15px;
-    margin-top: 15px;
-    float: none;
-    margin-right: none;
-    padding-left: -30px;
+    margin-left: 85px;
   }
 
   .form_color_container {
-    margin-top:10px;
-    margin-bottom: 20px;
+    margin-top:20px;
   }
 
+  .title_form {
+    margin-top: 20px;
+  }
+
+  .radio {
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
   .circle {
+    margin-bottom: 10px;
     width:90px;
     height:90px;
-    margin-right: 0;
+    margin-right: 10px;
     border-radius:50px;
     font-size:20px;
     font-family: arial;
     color:#fff;
     line-height:90px;
     text-align:center;
+    float: right;
   }
 
-  li.circle_list {
-    padding-left: 0;
-  }
 
 
 } /* close media queri */

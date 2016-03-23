@@ -36,8 +36,10 @@
   <p class="commenter"> Comment made by <%=comment.user.username %> at <%=comment.updated_at %></p>
   <p> <%=comment.text %></p>
   <% if @current_user %>
+  <% if @current_user.password == comment.user.password%>
   <p class="delete_comment"> <%= link_to 'Delete', [comment.post, comment],
   method: :delete, data: {confirm: 'Are you sure?'} %></p>
+  <% end %>
   <% end %>
 </div>
 <% end %>
@@ -48,6 +50,7 @@
 <p>
   <%= f.text_field :text, :placeholder => "Type a comment and press enter to submit.", :class => 'comment_field'%>
 </p>
+
 <% end %>
 <% end %>
 

@@ -11,6 +11,23 @@ http://www.cssmatic.com/gradient-generator#%27\-moz\-linear\-gradient\%28top\%2C
 }
 a {
   outline: 0;
+  display: block; /* make entire link box clickable */
+
+}
+
+video {
+  position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -100;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
 }
 /******************** HEADER STYLING *********/
 .header {
@@ -276,6 +293,11 @@ li a:hover {
   color: black;
 }
 /**************************** POST FORM */
+
+.small_form {
+  display: none;
+}
+
 .new_post_container {
   margin-top: 30px;
 }
@@ -479,16 +501,8 @@ h3 {
   font-size: 23px;
 }
 
-  /*<body class="backgroundimage">
-  <div class = "homecontainer">
-    <h1 class="mainheader">TEMPERMETRO</h1>
-    <h2>The app to vent your metro frustrations is finally here!</h2>
 
-    <div class = "homebutton"><%= link_to "View Complaints!", posts_path %>
-    </div>
-
-    <h3> or sign in to start venting </h3>*/
-  /********** All posts page *******/
+/********** All posts page *******/
   h1 {
     font-size: 30px;
   }
@@ -535,17 +549,29 @@ h3 {
     text-decoration: none;
   }
 
+/****** Post form page ******/
+  .big_form {
+    display: none;
+  }
+
+  .small_form {
+    display: block;
+  }
+
 
   .red_radio {
-    margin-left: 37px;
+    float: right;
+    display: none;
   }
 
   .orange_radio {
-    margin-left: 105px;
+    float: right;
+    display: none;
   }
 
   .yellow_radio {
-    margin-left: 105px;
+  float: right;
+  display: none;
   }
 
   .green_radio {
@@ -559,26 +585,33 @@ h3 {
     margin-left: 105px;
   }
 
-  .form_color_ul {
+  ul.form_color_ul {
     margin-bottom: 15px;
     margin-top: 15px;
-    margin-right: 80px;
+    float: none;
+    margin-right: none;
+    padding-left: -30px;
   }
 
   .form_color_container {
-    margin-top:60px;
+    margin-top:10px;
     margin-bottom: 20px;
   }
 
   .circle {
     width:90px;
     height:90px;
+    margin-right: 0;
     border-radius:50px;
     font-size:20px;
     font-family: arial;
     color:#fff;
     line-height:90px;
     text-align:center;
+  }
+
+  li.circle_list {
+    padding-left: 0;
   }
 
 

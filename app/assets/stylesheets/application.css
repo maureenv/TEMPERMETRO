@@ -106,10 +106,12 @@ h2 {
 .homebutton a{
   color: white;
   text-decoration: none;
+  border-bottom: 6px solid #a60000;
 }
 
-.homebutton:hover {
+.homebutton a:hover {
   background-color: #a60000;
+  border-bottom: 6px solid #7c0000;
 }
 
 h3 {
@@ -146,6 +148,7 @@ h1 {
 .postcolorguide {
   font-size: 25px;
   margin-top: 0px;
+  color: gray;
 }
 
 .postbutton {
@@ -155,11 +158,12 @@ h1 {
   font-size: 20px;
   font-weight: 700;
   text-align: center;
-  line-height: 50px;
+  line-height: 47px;
   font-family: arial;
-  background-color: gray;
+  background-color: #e60000;
   margin: 0 auto;
   margin-top: 20px;
+  border-bottom: 4px solid #a60000;
 }
 
 .postbutton a{
@@ -169,6 +173,7 @@ h1 {
 
 .postbutton:hover {
   background-color: #a60000;
+  border-bottom: 4px solid #7c0000;
 }
 .postgradient_red {
   background: rgba(191,17,55,1);
@@ -513,6 +518,7 @@ h3 {
     padding-top: 10px;
     width: 250px;
     margin: 0 auto;
+    color: gray;
   }
 
   .logo a{

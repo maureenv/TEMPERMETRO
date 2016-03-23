@@ -32,7 +32,7 @@
 
 <!-- COMMENT CONTAINER !-->
 <% post.comments.each do |comment| %>
-<div class = "commentcontainer">
+<div class = "commentcontainer" id="<%= comment.id %>">
   <p class="commenter"> Comment made by <%=comment.user.username %> at <%=comment.updated_at %></p>
   <p> <%=comment.text %></p>
   <% if @current_user %>

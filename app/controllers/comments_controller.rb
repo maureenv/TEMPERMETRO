@@ -5,7 +5,7 @@ class CommentsController < ApplicationController
     @comment.user = @current_user #NEED THIS TO SAVE CURRENT_USER to print out current user on posts and comments
 
     if @comment.save #saves model to database, returns boolean to show if post is saved or not.
-      redirect_to posts_path
+      redirect_to posts_path + "##{@comment.id}" #links to the new comment that was made
     else
       render 'new'#if all sections are filled out, redirect to all posts page, else, show a new form
     end

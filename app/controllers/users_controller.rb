@@ -11,7 +11,12 @@ class UsersController < ApplicationController
   def create
     @user = User.create(user_params)
     session[:user_id] = @user.id
-    redirect_to posts_path
+
+    if @user.save #saves model to database, returns boolean to show if post is saved or not.
+      redirect_to posts_path
+    else
+      render 'new'#if all sections are filled out, redirect to all posts page, else, show a new form
+    end
   end
 
   def show

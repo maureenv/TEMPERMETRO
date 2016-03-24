@@ -23,8 +23,9 @@ module TEMPERMETRO
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
 
-    Time.zone.name # => "Eastern Time (US & Canada)"
-    Time.zone.now  # => Sun, 18 May 2008 14:30:44 EDT -04:00
-    Time.current
+# prevents field_error messages from messing up CSS
+    config.action_view.field_error_proc = Proc.new { |html_tag, instance| html_tag}
+
+
   end
 end

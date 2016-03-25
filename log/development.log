@@ -66849,3 +66849,96 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 [0m
+
+
+Started GET "/" for ::1 at 2016-03-25 13:33:14 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#home as HTML
+  [1m[35mUser Exists (0.8ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 7]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  Rendered home/home.html.erb within layouts/application (294.7ms)
+  Rendered layouts/_header.html.erb (1.7ms)
+Completed 200 OK in 439ms (Views: 388.2ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/assets/application.self-9d2941883c795267dda965395b988f3f2fb812e6d5484b2925fd875e15ed2354.css?body=1" for ::1 at 2016-03-25 13:33:15 -0400
+
+
+Started GET "/assets/metro_map.jpg" for ::1 at 2016-03-25 13:33:15 -0400
+
+
+Started GET "/assets/metrobackground.jpg" for ::1 at 2016-03-25 13:33:15 -0400
+
+
+Started GET "/" for ::1 at 2016-03-25 13:33:24 -0400
+Processing by HomeController#home as HTML
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 51]]
+  Rendered home/home.html.erb within layouts/application (1.6ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 44ms (Views: 41.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-9d2941883c795267dda965395b988f3f2fb812e6d5484b2925fd875e15ed2354.css?body=1" for ::1 at 2016-03-25 13:33:24 -0400
+
+
+Started GET "/" for ::1 at 2016-03-25 13:33:25 -0400
+Processing by HomeController#home as HTML
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 51]]
+  Rendered home/home.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 39ms (Views: 36.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-9d2941883c795267dda965395b988f3f2fb812e6d5484b2925fd875e15ed2354.css?body=1" for ::1 at 2016-03-25 13:33:26 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-25 13:33:26 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-25 13:33:26 -0400
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 13:33:26 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 13:33:26 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-25 13:33:26 -0400
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 13:33:26 -0400
+
+
+Started GET "/assets/application.self-d949131173293f799c819fcfa07f4584f07c94b0b3c1368c5bc731928a0a7337.js?body=1" for ::1 at 2016-03-25 13:33:26 -0400
+
+
+Started GET "/assets/metrobackground.jpg" for ::1 at 2016-03-25 13:33:26 -0400
+
+
+Started GET "/assets/smallmetro3.jpg" for ::1 at 2016-03-25 13:33:37 -0400
+
+
+Started GET "/assets/smallmetro3.jpg" for ::1 at 2016-03-25 13:33:47 -0400
+
+
+Started GET "/posts" for ::1 at 2016-03-25 13:34:15 -0400
+Processing by PostsController#index as HTML
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 51]]
+  [1m[36mPost Load (1.1ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 5]]
+  [1m[36mComment Load (0.9ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."post_id" = $1[0m  [["post_id", 6]]
+  Rendered posts/index.html.erb within layouts/application (39.3ms)
+  Rendered layouts/_header.html.erb (1.8ms)
+Completed 200 OK in 115ms (Views: 97.4ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/assets/metro_map.jpg" for ::1 at 2016-03-25 13:34:15 -0400
+
+
+Started GET "/users/new" for ::1 at 2016-03-25 13:35:05 -0400
+Processing by UsersController#new as HTML
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 51]]
+  Rendered users/new.html.erb within layouts/application (25.7ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 55ms (Views: 53.0ms | ActiveRecord: 0.4ms)

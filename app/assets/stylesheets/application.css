@@ -493,7 +493,7 @@ input.comment_field{
 }
 
 /*************** MEDIA QUERIES ***************/
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
 
   /******** Home page ************/
 .homecontainer {

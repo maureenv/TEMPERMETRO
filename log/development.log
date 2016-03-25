@@ -67012,3 +67012,105 @@ Started GET "/assets/application.self-d949131173293f799c819fcfa07f4584f07c94b0b3
 
 
 Started GET "/assets/metro_map.jpg" for ::1 at 2016-03-25 14:25:12 -0400
+
+
+Started GET "/" for ::1 at 2016-03-25 15:00:22 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#home as HTML
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 51]]
+  Rendered home/home.html.erb within layouts/application (269.8ms)
+  Rendered layouts/_header.html.erb (1.5ms)
+Completed 200 OK in 387ms (Views: 336.6ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/" for ::1 at 2016-03-25 15:00:22 -0400
+Processing by HomeController#home as HTML
+  [1m[36mUser Exists (0.5ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 51]]
+  Rendered home/home.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 39ms (Views: 35.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/metrobackground.jpg" for ::1 at 2016-03-25 15:00:23 -0400
+
+
+Started GET "/users/new" for ::1 at 2016-03-25 15:00:47 -0400
+Processing by UsersController#new as HTML
+  [1m[35mUser Exists (0.4ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 51]]
+  Rendered users/new.html.erb within layouts/application (42.0ms)
+  Rendered layouts/_header.html.erb (1.9ms)
+Completed 200 OK in 100ms (Views: 95.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/metro_map.jpg" for ::1 at 2016-03-25 15:00:47 -0400
+
+
+Started GET "/users/new" for ::1 at 2016-03-25 16:09:59 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#new as HTML
+  [1m[35mUser Exists (0.5ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 51]]
+  Rendered users/new.html.erb within layouts/application (24.8ms)
+  Rendered layouts/_header.html.erb (1.6ms)
+Completed 200 OK in 416ms (Views: 368.8ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/assets/application.self-799a5bed96d0cb41b1b8a4a88b0401161ee086a58cf78145808c7af031fe7836.css?body=1" for ::1 at 2016-03-25 16:10:01 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-25 16:10:01 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-25 16:10:01 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-25 16:10:01 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 16:10:01 -0400
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 16:10:01 -0400
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 16:10:01 -0400
+
+
+Started GET "/assets/application.self-d949131173293f799c819fcfa07f4584f07c94b0b3c1368c5bc731928a0a7337.js?body=1" for ::1 at 2016-03-25 16:10:01 -0400
+
+
+Started GET "/assets/metro_map.jpg" for ::1 at 2016-03-25 16:10:01 -0400
+
+
+Started GET "/users/new" for ::1 at 2016-03-25 16:10:09 -0400
+Processing by UsersController#new as HTML
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 51]]
+  Rendered users/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_header.html.erb (0.2ms)
+Completed 200 OK in 50ms (Views: 47.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-799a5bed96d0cb41b1b8a4a88b0401161ee086a58cf78145808c7af031fe7836.css?body=1" for ::1 at 2016-03-25 16:10:09 -0400
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-03-25 16:10:09 -0400
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-03-25 16:10:09 -0400
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 16:10:09 -0400
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 16:10:10 -0400
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-03-25 16:10:10 -0400
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-03-25 16:10:10 -0400
+
+
+Started GET "/assets/application.self-d949131173293f799c819fcfa07f4584f07c94b0b3c1368c5bc731928a0a7337.js?body=1" for ::1 at 2016-03-25 16:10:10 -0400
+
+
+Started GET "/assets/metro_map.jpg" for ::1 at 2016-03-25 16:10:10 -0400

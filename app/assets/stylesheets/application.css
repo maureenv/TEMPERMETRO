@@ -312,6 +312,13 @@ li a{
 li a:hover {
   color: black;
 }
+
+input[type='submit']
+{
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
 /**************************** POST FORM */
 
 .small_form {
@@ -500,7 +507,8 @@ input.comment_field{
 
   /******** Home page ************/
 .homecontainer {
-  width: 300px;
+  width: 330px;
+  /*or change back to 300*/
 }
 
 
@@ -642,6 +650,11 @@ h3 {
     display: none;
   }
 
-
+  input[type='submit']
+  {
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+  }
 
 } /* close media queri */

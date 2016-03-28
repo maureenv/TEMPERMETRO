@@ -1,0 +1,668 @@
+/* MAKE CSS GRADIENTS
+http://www.cssmatic.com/gradient-generator#%27\-moz\-linear\-gradient\%28top\%2C\%20rgba\%28191\%2C17\%2C55\%2C1\%29\%200\%25\%2C\%20rgba\%28205\%2C205\%2C205\%2C1\%29\%20100\%25\%29\%3B%27
+*/
+
+
+
+* {
+    margin: 0;
+    padding: 0 auto;
+     box-sizing: border-box;
+     /*outline: 1px solid red;*/
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+}
+a {
+  outline: 0;
+  display: block; /* make entire link box clickable */
+
+}
+.backgroundimage {
+  background-image: url(metrobackground.jpg);
+   background-attachment: fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   z-index: -100;
+
+}
+
+video {
+  position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -10;
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+}
+/******************** HEADER STYLING *********/
+.header {
+  width: 100%;
+  height: 70px;
+  background-color: black;
+}
+
+
+.logo a{
+  font-family: 'Arial Black', 'Arial Bold', Arial;
+  font-size: 25px;
+  padding-left: 30px;
+  float: left;
+  padding-top: 17px;
+  color: blue;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+
+.signin a{
+  float: right;
+  font-family: arial;
+  padding-right: 30px;
+  padding-left: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.signin {
+  float: right;
+  font-family: arial;
+  padding-right: 30px;
+  padding-top: 26.5px;
+  color: white;
+  text-decoration: none;
+}
+
+.signin a:hover {
+  color: #e60000;
+}
+
+/******************** HOME PAGE STYLING *********/
+
+
+
+h2 {
+  font-family: arial;
+  font-size: 80px;
+  font-weight: 700;
+  text-align: center;
+}
+
+h3 a{
+  text-decoration: none;
+  color: black;
+}
+
+.homecontainer {
+  width: 750px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 100px;
+
+}
+
+.homebutton{
+  width: 410px;
+  height: 100px;
+  color: white;
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 100px;
+  font-family: arial;
+  background-color: #e60000;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.homebutton a{
+  color: white;
+  text-decoration: none;
+  border-bottom: 6px solid #a60000;
+}
+
+.homebutton a:hover {
+  background-color: #a60000;
+  border-bottom: 6px solid #7c0000;
+}
+
+h3 {
+  color: black;
+  font-size: 40px;
+  font-weight: 300;
+  font-family: arial;
+  text-align: center;
+  margin-top: 30px;
+}
+
+
+/******************** Make a Post *********/
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  font-family: arial;
+  margin-top: 30px;
+}
+/******************** All Posts page *********/
+body{
+  width: 100%;
+background-image: url(metro_map.jpg);
+background-repeat:no-repeat;
+background-position: center center;
+ z-index: -100;
+ background-attachment: fixed;
+ }
+
+.postcolorguide {
+  font-size: 25px;
+  margin-top: 0px;
+  color: gray;
+}
+
+.postbutton {
+  width: 200px;
+  height: 50px;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 47px;
+  font-family: arial;
+  background-color: #e60000;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-bottom: 4px solid #a60000;
+}
+
+.postbutton a{
+  color: white;
+  text-decoration: none;
+}
+
+.postbutton:hover {
+  background-color: #a60000;
+  border-bottom: 4px solid #7c0000;
+}
+.postgradient_red {
+  background: rgba(191,17,55,1);
+  background: -moz-linear-gradient(top, rgba(191,17,55,1) 0%, rgba(205,205,205,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(191,17,55,1)), color-stop(100%, rgba(205,205,205,1)));
+  background: -webkit-linear-gradient(top, rgba(191,17,55,1) 0%, rgba(205,205,205,1) 100%);
+  background: -o-linear-gradient(top, rgba(191,17,55,1) 0%, rgba(205,205,205,1) 100%);
+  background: -ms-linear-gradient(top, rgba(191,17,55,1) 0%, rgba(205,205,205,1) 100%);
+  background: linear-gradient(to bottom, rgba(191,17,55,1) 0%, rgba(205,205,205,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bf1137', endColorstr='#cdcdcd', GradientType=0 );
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.postgradient_orange {
+  background: rgba(221,134,3,1);
+  background: -moz-linear-gradient(top, rgba(221,134,3,1) 0%, rgba(205,205,205,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(221,134,3,1)), color-stop(100%, rgba(205,205,205,1)));
+  background: -webkit-linear-gradient(top, rgba(221,134,3,1) 0%, rgba(205,205,205,1) 100%);
+  background: -o-linear-gradient(top, rgba(221,134,3,1) 0%, rgba(205,205,205,1) 100%);
+  background: -ms-linear-gradient(top, rgba(221,134,3,1) 0%, rgba(205,205,205,1) 100%);
+  background: linear-gradient(to bottom, rgba(221,134,3,1) 0%, rgba(205,205,205,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dd8603', endColorstr='#cdcdcd', GradientType=0 );
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.postgradient_silver {
+  background: rgba(138,138,138,1);
+  background: -moz-linear-gradient(top, rgba(138,138,138,1) 0%, rgba(205,205,205,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(138,138,138,1)), color-stop(100%, rgba(205,205,205,1)));
+  background: -webkit-linear-gradient(top, rgba(138,138,138,1) 0%, rgba(205,205,205,1) 100%);
+  background: -o-linear-gradient(top, rgba(138,138,138,1) 0%, rgba(205,205,205,1) 100%);
+  background: -ms-linear-gradient(top, rgba(138,138,138,1) 0%, rgba(205,205,205,1) 100%);
+  background: linear-gradient(to bottom, rgba(138,138,138,1) 0%, rgba(205,205,205,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8a8a8a', endColorstr='#cdcdcd', GradientType=0 );
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.postgradient_blue {
+  background: rgba(10,146,214,1);
+  background: -moz-linear-gradient(top, rgba(10,146,214,1) 0%, rgba(205,205,205,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(10,146,214,1)), color-stop(100%, rgba(205,205,205,1)));
+  background: -webkit-linear-gradient(top, rgba(10,146,214,1) 0%, rgba(205,205,205,1) 100%);
+  background: -o-linear-gradient(top, rgba(10,146,214,1) 0%, rgba(205,205,205,1) 100%);
+  background: -ms-linear-gradient(top, rgba(10,146,214,1) 0%, rgba(205,205,205,1) 100%);
+  background: linear-gradient(to bottom, rgba(10,146,214,1) 0%, rgba(205,205,205,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a92d6', endColorstr='#cdcdcd', GradientType=0 );
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.postgradient_yellow {
+  background: rgba(246,212,22,1);
+  background: -moz-linear-gradient(top, rgba(246,212,22,1) 0%, rgba(205,205,205,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(246,212,22,1)), color-stop(100%, rgba(205,205,205,1)));
+  background: -webkit-linear-gradient(top, rgba(246,212,22,1) 0%, rgba(205,205,205,1) 100%);
+  background: -o-linear-gradient(top, rgba(246,212,22,1) 0%, rgba(205,205,205,1) 100%);
+  background: -ms-linear-gradient(top, rgba(246,212,22,1) 0%, rgba(205,205,205,1) 100%);
+  background: linear-gradient(to bottom, rgba(246,212,22,1) 0%, rgba(205,205,205,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6d416', endColorstr='#cdcdcd', GradientType=0 );
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.postgradient_green {
+  background: rgba(0,175,82,1);
+  background: -moz-linear-gradient(top, rgba(0,175,82,1) 0%, rgba(205,205,205,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,175,82,1)), color-stop(100%, rgba(205,205,205,1)));
+  background: -webkit-linear-gradient(top, rgba(0,175,82,1) 0%, rgba(205,205,205,1) 100%);
+  background: -o-linear-gradient(top, rgba(0,175,82,1) 0%, rgba(205,205,205,1) 100%);
+  background: -ms-linear-gradient(top, rgba(0,175,82,1) 0%, rgba(205,205,205,1) 100%);
+  background: linear-gradient(to bottom, rgba(0,175,82,1) 0%, rgba(205,205,205,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00af52', endColorstr='#cdcdcd', GradientType=0 );
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.postcontainer {
+  background-color: white;
+  /*border: solid blue 5px;*/
+  padding: 15px;
+  padding-bottom: 45px;
+}
+
+p {
+  font-family: arial;
+}
+
+.posttitle {
+  font-family: arial;
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.date {
+  color: gray;
+  padding-bottom: 10px;
+}
+
+ul{
+  float: left;
+  margin-left: -70px;
+}
+li {
+  float: right;
+  list-style: none;
+  padding-left: 30px;
+  padding-top: 10px;
+}
+li a{
+  color: gray;
+  font-family: arial;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: black;
+}
+
+input[type='submit']
+{
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+}
+/**************************** POST FORM */
+
+.small_form {
+  display: none;
+}
+
+.new_post_container {
+  margin-top: 30px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea{
+  width:100%;
+  font-family: arial;
+  font-size: 25px;
+  display:block;
+  margin-bottom: 30px;
+  border-color: black;
+  padding: 5px;
+  border: 1px solid black;
+}
+
+
+input.post_field {
+  border: 1px solid black;
+}
+
+label {
+  font-size: 25px;
+  font-family: arial;
+  font-weight: 700;
+}
+
+.submit_button {
+  margin-top: -5px;
+  background-color: #e60000;
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+  border: none;
+  border-bottom: 6px solid #a60000;
+  -webkit-appearance: none;
+}
+
+.submit_button:hover {
+  background-color: #a60000;
+  border-bottom: 6px solid #7c0000;
+  -webkit-appearance: none;
+}
+
+.back {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.back a{
+  color: black;
+  text-decoration: none;
+  font-family: arial;
+  font-size: 20px;
+}
+
+.back a:hover {
+  color: red;
+}
+
+.post_field {
+  height: 100px;
+}
+/*************************** RADIO BUTTON *********/
+
+.red_radio {
+  margin-left: 37px;
+}
+
+.orange_radio {
+  margin-left: 105px;
+}
+
+.yellow_radio {
+  margin-left: 105px;
+}
+
+.green_radio {
+  margin-left: 105px;
+}
+
+.blue_radio {
+  margin-left: 105px;
+}
+.silver_radio {
+  margin-left: 105px;
+}
+
+.form_color_ul {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.form_color_container {
+  margin-top:60px;
+  margin-bottom: 20px;
+}
+.circle_list {
+  margin-right: 1.5px;
+}
+.circle {
+  width:90px;
+  height:90px;
+  border-radius:50px;
+  font-size:20px;
+  font-family: arial;
+  color:#fff;
+  line-height:90px;
+  text-align:center;
+}
+
+.red {
+  background-color: rgba(191,17,55,1);
+}
+
+.orange {
+  background-color: rgba(221,134,3,1);
+}
+
+.yellow {
+  background-color: rgba(246,212,22,1);
+}
+
+.green {
+  background-color: rgba(0,175,82,1);
+}
+
+.blue {
+  background-color: rgba(10,146,214,1);
+}
+
+.silver {
+  background-color: rgba(138,138,138,1);
+}
+/**************************** COMMENTS ***********/
+
+.commentcontainer {
+  background-color: #cdcdcd;
+  padding: 15px 25px 15px 25px;
+  border-bottom: black solid 1px;
+}
+
+.commenter {
+  color: gray;
+  padding-bottom: 10px;
+}
+
+.comment_field {
+  height: 40px;
+  font-size: 15px;
+  border: 1px solid;
+}
+.delete_comment {
+  padding-top: 10px;
+}
+
+.delete_comment a {
+  color: gray;
+  text-decoration: none;
+}
+
+.delete_comment a:hover {
+  color: black;
+}
+
+textarea.comment_field {
+  margin-top: 0px;
+}
+
+input.comment_field{
+  width:100%;
+  font-family: arial;
+  font-size: 16px;
+  display:block;
+  padding: 10px;
+}
+
+/*************** MEDIA QUERIES ***************/
+@media screen and (max-width: 450px) {
+
+  * {
+      margin: 0;
+      padding: 0 auto;
+       box-sizing: border-box;
+       /*outline: 1px solid red;*/
+       -webkit-appearance: none;
+       -moz-appearance: none;
+       appearance: none;
+  }
+
+  /******** Home page ************/
+.homecontainer {
+  width: 330px;
+  /*or change back to 300*/
+}
+
+
+h2 {
+  padding-top: 10px;
+  font-size: 33px;
+}
+
+.homebutton {
+  width: 250px;
+  height: 80px;
+  line-height: 80px;
+  font-size: 25px;
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 23px;
+  color: black;
+  text-decoration: none;
+}
+
+/********** All posts page *******/
+  h1 {
+    font-size: 30px;
+  }
+
+  .no_welcome {
+    display: none;
+  }
+  .container {
+    width: 300px;
+  }
+
+  .postcolorguide {
+    font-size: 18px;
+    padding-top: 10px;
+    width: 250px;
+    margin: 0 auto;
+    color: gray;
+  }
+
+  .logo a{
+    font-family: 'Arial Black', 'Arial Bold', Arial;
+    font-size: 25px;
+    padding-left: 10px;
+    float: left;
+    padding-top: 17px;
+    color: blue;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .signin a{
+    float: right;
+    font-family: arial;
+    padding-right: 1px;
+    padding-left: 1px;
+    margin-right: -15px;
+    color: white;
+    text-decoration: none;
+  }
+
+  .signin {
+    float: right;
+    font-family: arial;
+    padding-top: 26.5px;
+    color: white;
+    text-decoration: none;
+  }
+
+/****** Post form page ******/
+  .big_form {
+    display: none;
+  }
+
+  .small_form {
+    display: block;
+  }
+
+
+  .red_radio {
+    margin-right: 0;
+  }
+
+  .orange_radio {
+    margin-left: 85px;
+  }
+
+  .yellow_radio {
+  margin-left: 82px;
+  }
+
+  .green_radio {
+    margin-left: 40px;
+  }
+
+  .blue_radio {
+    margin-left: 80px;
+  }
+  .silver_radio {
+    margin-left: 85px;
+  }
+
+  .form_color_container {
+    margin-top:20px;
+  }
+
+  .title_form {
+    margin-top: 20px;
+  }
+
+  .radio {
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+  .circle {
+    margin-bottom: 10px;
+    width:90px;
+    height:90px;
+    margin-right: 10px;
+    border-radius:50px;
+    font-size:20px;
+    font-family: arial;
+    color:#fff;
+    line-height:90px;
+    text-align:center;
+    float: right;
+  }
+
+  .backgroundimage {
+    background-image: url(smallmetro3.jpg);
+    background-repeat:no-repeat;
+    background-position: center center;
+     z-index: -100;
+  }
+
+  video {
+    display: none;
+  }
+
+
+} /* close media queri */

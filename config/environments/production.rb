@@ -37,6 +37,13 @@ Rails.application.configure do
 
   # $ git commit -m "rake assets:precompile" needed for HEROKU make CSS WORK
 
+  # HEROKU STEPS
+  # bundle exec rake assets:precompile
+  # git add .
+  # git commit -m "msg"
+  # git push heroku master
+  # heroku open
+
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
   # Specifies the header that your server uses for sending files.

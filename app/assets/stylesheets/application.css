@@ -56,7 +56,7 @@ video {
   padding-left: 30px;
   float: left;
   padding-top: 17px;
-  color: red;
+  color: blue;
   font-weight: 700;
   text-decoration: none;
 }
@@ -570,7 +570,7 @@ h3 {
     padding-left: 10px;
     float: left;
     padding-top: 17px;
-    color: red;
+    color: blue;
     font-weight: 700;
     text-decoration: none;
   }

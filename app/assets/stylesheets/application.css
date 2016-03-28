@@ -8,6 +8,9 @@ http://www.cssmatic.com/gradient-generator#%27\-moz\-linear\-gradient\%28top\%2C
     padding: 0 auto;
      box-sizing: border-box;
      /*outline: 1px solid red;*/
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
 }
 a {
   outline: 0;
@@ -53,7 +56,7 @@ video {
   padding-left: 30px;
   float: left;
   padding-top: 17px;
-  color: white;
+  color: red;
   font-weight: 700;
   text-decoration: none;
 }
@@ -505,6 +508,16 @@ input.comment_field{
 /*************** MEDIA QUERIES ***************/
 @media screen and (max-width: 450px) {
 
+  * {
+      margin: 0;
+      padding: 0 auto;
+       box-sizing: border-box;
+       /*outline: 1px solid red;*/
+       -webkit-appearance: none;
+       -moz-appearance: none;
+       appearance: none;
+  }
+
   /******** Home page ************/
 .homecontainer {
   width: 330px;
@@ -557,7 +570,7 @@ h3 {
     padding-left: 10px;
     float: left;
     padding-top: 17px;
-    color: white;
+    color: red;
     font-weight: 700;
     text-decoration: none;
   }
@@ -650,11 +663,5 @@ h3 {
     display: none;
   }
 
-  input[type='submit']
-  {
-     -webkit-appearance: none;
-     -moz-appearance: none;
-     appearance: none;
-  }
 
 } /* close media queri */

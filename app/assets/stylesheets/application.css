@@ -9,9 +9,9 @@ http://www.cssmatic.com/gradient-generator#%27\-moz\-linear\-gradient\%28top\%2C
      box-sizing: border-box;
      /*outline: 1px solid red;*/
      /* remove safari custom button styling */
-     -webkit-appearance: none;
+     /*-webkit-appearance: none;
      -moz-appearance: none;
-     appearance: none;
+     appearance: none;*/
      /* remove safari custom border radius */
 }
 a {

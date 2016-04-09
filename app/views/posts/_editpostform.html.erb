@@ -1,3 +1,5 @@
+<% if @current_user %>
+<h1> Revise Your Fury! </h1>
 <div class="big_form">
 <div class="new_post_container">
 <%= form_for :post, url: post_path(@post), method: :patch do |f| %>
@@ -91,3 +93,4 @@
 
 </div>
 </div>
+<% end %>

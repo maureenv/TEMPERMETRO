@@ -43,6 +43,10 @@ Rails.application.configure do
   # git commit -m "msg"
   # git push heroku master
   # heroku open
+  #heroku run rake db:migrate
+
+  #Destroy all heroku apps
+  #for app in $(heroku apps); do heroku apps:destroy --app $app --confirm $app; done
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 

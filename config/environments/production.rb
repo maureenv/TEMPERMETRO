@@ -36,6 +36,17 @@ Rails.application.configure do
   config.assets.digest = true
 
   # $ git commit -m "rake assets:precompile" needed for HEROKU make CSS WORK
+  # if I get THIS ERROR  Is the server running locally and accepting connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+  # first in main terminal rm -rf /usr/local/var/postgres && initdb /usr/local/var/postgres -E utf8
+  # then do pg_ctl -D /usr/local/var/postgres -l logfile start
+
+  #remember to always run these steps when you start
+  # bundle install
+  # rake db:drop
+  # rake db:create
+  # rake db:migrate
+  # rake db:seed
+
 
   # HEROKU STEPS
   # bundle exec rake assets:precompile
@@ -47,6 +58,9 @@ Rails.application.configure do
 
   #Destroy all heroku apps
   #for app in $(heroku apps); do heroku apps:destroy --app $app --confirm $app; done
+
+  #drop heroku database
+  # heroku pg:reset DATABASE_URL
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 

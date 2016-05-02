@@ -1,13 +1,16 @@
 <body class="backgroundimage">
 
-    <%= video_tag "metro2.mp4", autoplay: :autoplay, loop: :loop %>
-<div class = "homecontainer">
-  <h2>Vent your DC Metro frustrations! </h2>
+  <%= video_tag "metro2.mp4", autoplay: :autoplay, loop: :loop %>
+    <div class="center_home">
+  <div class = "homecontainer">
 
-  <div class = "homebutton"><%= link_to "View Complaints!", posts_path %>
+      <h2>Vent your DC Metro frustrations! </h2>
+
+      <div class = "homebutton"><%= link_to "View Complaints!", posts_path %>
+      </div>
+
+      <h3 class="signintext"><%= link_to "or sign in to start venting", new_user_path %> </h3>
+
+    </div>
   </div>
-
-  <h3 class="signintext"><%= link_to "or sign in to start venting", new_user_path %> </h3>
-
-</div>
 </body>

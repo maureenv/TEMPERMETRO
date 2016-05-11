@@ -2,9 +2,14 @@
 <h1> SHARE YOUR RAGE! </h1>
 <div class="big_form">
 <div class="new_post_container">
+  <!-- mms: is you used the object here, rails would take care of create/update
+  form_for @post do |f| -->
 <%= form_for :post, url: posts_path do |f| %>
 
   <%= f.label "On which metro-line did this occur?"%><br>
+    <!-- mms: lots of duplication here.  I recommend a PORO (Plain-ole-ruby-object) model.
+       Maybe Metro.lines (which returns an array of colors?) -->
+    <!-- mms: this same code is in postform -->
     <ul class="form_color_ul">
       <li class="circle_list"><div class="silver circle">SV</div></li>
       <li class="circle_list"><div class="blue circle">BL</div></li>
@@ -91,7 +96,7 @@
 
 <p class="back"> <%= link_to 'Back', posts_path %> </p>
 
-
+mms: watch you indentation.  Why are these at the same level?
 </div>
 </div>
 <% end %>
